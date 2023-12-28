@@ -73,30 +73,19 @@ python3 manage.py runserver
 
 <table align='center'>
   <tr align='center'>
-    <td>Book</td>
-  </tr>
-  <tr align='center'>
-    <td>
-      <img src='https://github.com/truonganhvu205/little-lemon-website-be/blob/main/little-lemon-be-django-truong-anh-vu-12-28-2023/little-lemon-be-django-truong-anh-vu-12-28-2023-pic-5.png' />
-    </td>
-  </tr>
-</table>
-
-<table align='center'>
-  <tr align='center'>
     <td>Before Booking</td>
     <td>After Booking</td>
     <td>All Reservations</td>
   </tr>
   <tr align='center'>
     <td>
+      <img src='https://github.com/truonganhvu205/little-lemon-website-be/blob/main/little-lemon-be-django-truong-anh-vu-12-28-2023/little-lemon-be-django-truong-anh-vu-12-28-2023-pic-5.png' />
+    </td>
+    <td>
       <img src='https://github.com/truonganhvu205/little-lemon-website-be/blob/main/little-lemon-be-django-truong-anh-vu-12-28-2023/little-lemon-be-django-truong-anh-vu-12-28-2023-pic-6.png' />
     </td>
     <td>
       <img src='https://github.com/truonganhvu205/little-lemon-website-be/blob/main/little-lemon-be-django-truong-anh-vu-12-28-2023/little-lemon-be-django-truong-anh-vu-12-28-2023-pic-7.png' />
-    </td>
-    <td>
-      <img src='https://github.com/truonganhvu205/little-lemon-website-be/blob/main/little-lemon-be-django-truong-anh-vu-12-28-2023/little-lemon-be-django-truong-anh-vu-12-28-2023-pic-8.png' />
     </td>
   </tr>
 </table>
