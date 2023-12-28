@@ -12,7 +12,7 @@ class MenuItem(models.Model):
 class Booking(models.Model):
     first_name = models.CharField(max_length=255)
     reservation_slot = models.SmallIntegerField(default=2)
-    reservation_date = models.DateField(auto_now_add=True)
+    reservation_date = models.DateField()
     
     def __str__(self):
         return self.first_name
