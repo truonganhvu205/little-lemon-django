@@ -1,0 +1,12 @@
+Django
+- Admin
+-- admin
+-- adminuser123$%^
+
+- Customer
+-- johndoe
+-- johndoeuser123$%^
+
+MySQL
+- adminlittlelemon
+- admin123$%^
