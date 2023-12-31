@@ -16,9 +16,12 @@ pipenv --python 3.10
 pipenv shell
 ```
 
-## Install Django & Frameworks
+## Install Django & frameworks
 ```bash
+# Django
 pipenv install django
+
+# Frameworks
 pipenv install mysqlclient
 pipenv install djangorestframework
 pipenv install djoser
@@ -28,9 +31,11 @@ pipenv install djoser
 ```bash
 mysql -u root -p
 create database reservations;
+
 create user 'adminlittlelemon'@'localhost' identified by 'admin123$%^';
 grant all on *.* to 'adminlittlelemon'@'localhost';
 flush privileges;
+
 exit
 ```
 
@@ -41,6 +46,28 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 
+## Account required
+```bash
+Django
+  Admin
+    admin
+    adminuser123$%^
+
+  Customer
+    johndoe
+    johndoeuser123$%^
+
+MySQL
+  adminlittlelemon
+  admin123$%^
+```
+
+## Deactivate virtual environment
+```bash
+exit
+```
+
+# Preview project
 <table align='center'>
   <tr align='center'>
     <td>Home</td>
@@ -48,10 +75,10 @@ python3 manage.py runserver
   </tr>
   <tr align='center'>
     <td>
-      <img src='https://github.com/truonganhvu205/little-lemon-website-be/blob/main/little-lemon-be-django-truong-anh-vu-12-28-2023/little-lemon-be-django-truong-anh-vu-12-28-2023-pic-1.png' />
+      <img src='https://github.com/truonganhvu205/little-lemon-django/blob/main/little-lemon-django/little-lemon-django-pic-1.png' />
     </td>
     <td>
-      <img src='https://github.com/truonganhvu205/little-lemon-website-be/blob/main/little-lemon-be-django-truong-anh-vu-12-28-2023/little-lemon-be-django-truong-anh-vu-12-28-2023-pic-2.png' />
+      <img src='https://github.com/truonganhvu205/little-lemon-django/blob/main/little-lemon-django/little-lemon-django-pic-2.png' />
     </td>
   </tr>
 </table>
@@ -63,10 +90,10 @@ python3 manage.py runserver
   </tr>
   <tr align='center'>
     <td>
-      <img src='https://github.com/truonganhvu205/little-lemon-website-be/blob/main/little-lemon-be-django-truong-anh-vu-12-28-2023/little-lemon-be-django-truong-anh-vu-12-28-2023-pic-3.png' />
+      <img src='https://github.com/truonganhvu205/little-lemon-django/blob/main/little-lemon-django/little-lemon-django-pic-3.png' />
     </td>
     <td>
-      <img src='https://github.com/truonganhvu205/little-lemon-website-be/blob/main/little-lemon-be-django-truong-anh-vu-12-28-2023/little-lemon-be-django-truong-anh-vu-12-28-2023-pic-4.png' />
+      <img src='https://github.com/truonganhvu205/little-lemon-django/blob/main/little-lemon-django/little-lemon-django-pic-4.png' />
     </td>
   </tr>
 </table>
@@ -79,13 +106,13 @@ python3 manage.py runserver
   </tr>
   <tr align='center'>
     <td>
-      <img src='https://github.com/truonganhvu205/little-lemon-website-be/blob/main/little-lemon-be-django-truong-anh-vu-12-28-2023/little-lemon-be-django-truong-anh-vu-12-28-2023-pic-5.png' />
+      <img src='https://github.com/truonganhvu205/little-lemon-django/blob/main/little-lemon-django/little-lemon-django-pic-5.png' />
     </td>
     <td>
-      <img src='https://github.com/truonganhvu205/little-lemon-website-be/blob/main/little-lemon-be-django-truong-anh-vu-12-28-2023/little-lemon-be-django-truong-anh-vu-12-28-2023-pic-6.png' />
+      <img src='https://github.com/truonganhvu205/little-lemon-django/blob/main/little-lemon-django/little-lemon-django-pic-6.png' />
     </td>
     <td>
-      <img src='https://github.com/truonganhvu205/little-lemon-website-be/blob/main/little-lemon-be-django-truong-anh-vu-12-28-2023/little-lemon-be-django-truong-anh-vu-12-28-2023-pic-7.png' />
+      <img src='https://github.com/truonganhvu205/little-lemon-django/blob/main/little-lemon-django/little-lemon-django-pic-7.png' />
     </td>
   </tr>
 </table>

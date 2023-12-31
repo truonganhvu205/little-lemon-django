@@ -16,9 +16,9 @@ def about(request):
 
 def menu_item(request):
     menu_data = MenuItem.objects.all()
-    main_data = {'menu':menu_data}
+    main_data = {'menu': menu_data}
     
-    return render(request, 'menu.html', {'menu':main_data})
+    return render(request, 'menu.html', {'menu': main_data})
 
 def display_menu_item(request, pk=None):
     if pk:
@@ -26,7 +26,7 @@ def display_menu_item(request, pk=None):
     else:
         menu_item = ''
     
-    return render(request, 'menu_item.html', {'menu_item':menu_item})
+    return render(request, 'menu_item.html', {'menu_item': menu_item})
 
 def book(request):
     form = BookingForm()
@@ -43,7 +43,7 @@ def reservations(request):
     date = request.GET.get('date', datetime.today().date())
     bookings = Booking.objects.all()
     booking_json = serializers.serialize('json', bookings)
-    return render(request, 'bookings.html', {"bookings": booking_json})
+    return render(request, 'bookings.html', {'bookings': booking_json})
 
 @csrf_exempt
 def bookings(request):
@@ -51,7 +51,8 @@ def bookings(request):
         data = json.load(request)
         exist = Booking.objects.filter(reservation_date=data['reservation_date']).filter(
             reservation_slot=data['reservation_slot']).exists()
-        if exist==False:
+        
+        if exist == False:
             booking = Booking(
                 first_name=data['first_name'],
                 reservation_date=data['reservation_date'],

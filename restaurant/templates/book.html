@@ -5,22 +5,20 @@
 <section>
   <article>
     <h1>Make a reservation</h1>
-    <!--Begin row-->
     <div class="row">
-      <!--Begin col-->
       <div class="column">
         {% csrf_token %}
         <form method="POST" id="form">
           <p>
-            <label for="first_name">Name:</label>
+            <label for="first_name">Name</label>
             <input type="text" placeholder="Your Name" maxlength="200" required="" id="first_name">
           </p>
           <p>
-            <label for="reservation_date">Reservation date:</label>
+            <label for="reservation_date">Reservation date</label>
             <input type="date" id="reservation_date">
           </p>
           <p>
-            <label for="reservation_slot">Reservation time:</label>
+            <label for="reservation_slot">Reservation time</label>
             <select id="reservation_slot">
               <option value="0" disabled>Select time</option>
             </select>
@@ -28,17 +26,13 @@
           <button type="button" id="button">Reserve</button>
         </form>
       </div>
-      <!--End col-->
 
-      <!--Begin col-->
       <div class="column">
         <h2>Bookings For <span id="today"></span></h2>
         <div id="bookings">
         </div>
       </div>
-      <!--End col-->
     </div>
-    <!--End row-->
   </article>
 </section>
 
@@ -71,6 +65,7 @@
         slot_options = `<option value="0" disabled>Select time</option>`
         for (let i = 10; i <= 20; i++) {
           const label = formatTime(i)
+
           if (reserved_slots.includes(i)) {
             slot_options += `<option value=${i} disabled>${label}</option>`
           } else {
@@ -90,6 +85,7 @@
     const ampm = time < 12 ? 'AM' : 'PM'
     const t = time < 12 ? time : time > 12 ? time - 12 : time
     const label = `${t} ${ampm}`
+
     return label
   }
 
